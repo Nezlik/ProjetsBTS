@@ -1,0 +1,312 @@
+/* Reinitialisation de la marge pour tous les elements */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+}
+
+/*----------------Connexion----------------*/
+.home{
+    width:50px;
+    height:50px;
+    display: block;
+    margin:auto;
+}
+
+.hy{
+    text-align:center;
+    color:rgb(209, 0, 0);
+}
+
+/* Styles pour l'element avec la classe "bodyInsc" */
+.bodyConnexion {
+    font-family: "Muli", sans-serif;
+    background-color: #33475b;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    /* Disposition des elements en colonne */
+    align-items: center;
+    /* Centrage horizontal des elements */
+    justify-content: center;
+    /* Centrage vertical des elements */
+    height: 100vh;
+    /* Hauteur de 100% de la hauteur de la fenetre */
+    overflow: hidden;
+    /* Masquage du debordement du contenu */
+}
+
+
+/* Styles pour l'element avec la classe "container" */
+.container {
+    background-color: #393e467d;
+    padding: 20px 40px;
+    /* Remplissage de 20 pixels en haut et en bas, 40 pixels a gauche et a droite */
+    border-radius: 5px;
+    /* Bordure arrondie de 5 pixels */
+}
+
+/* Styles pour l'element "h1" a l'interieur de l'element avec la classe "container" */
+.container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Styles pour les elements "a" a l'interieur de l'element avec la classe "container" */
+.container a {
+    text-decoration: none;
+    /* Pas de soulignement du texte */
+    color: orange;
+}
+
+
+
+/* Styles pour l'element avec la classe "bouton" */
+.bouton {
+    cursor: pointer;
+    display: inline-block;
+    /* Affichage en tant que bloc en ligne */
+    width: 100%;
+    background: orange;
+    /* Couleur de fond */
+    padding: 15px;
+    /* Remplissage de 15 pixels */
+    font-family: inherit;
+    font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+    /* Bordure arrondie*/
+}
+
+/* Styles pour l'element avec la classe "text" */
+.text {
+    margin-top: 30px;
+}
+
+/* Styles pour l'element avec la classe "form-control" */
+.form-control {
+    position: relative;
+    margin: 20px 0 40px;
+    /* Marge de 20 pixels en haut, 0 a gauche et a droite, 40 pixels en bas */
+    width: 300px;
+    color: white;
+}
+
+/* Styles pour l'element <input> a l'interieur de l'element avec la classe "form-control" */
+.form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    /* Bordure inferieure de 2 pixels avec couleur*/
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    /* Remplissage de 15 pixels en haut et en bas, 0 gauche et droite */
+    font-size: 18px;
+    /* Taille de police */
+    color: #fff;
+}
+
+/* Styles pour le texte de substitution de l'element <input> */
+input::placeholder {
+    color: white;
+    opacity: 1;
+    /* Opacite de 1 (pleinement visible) */
+}
+
+/* Styles pour l'element <select> */
+select {
+    display: flex;
+    flex-direction: column;
+    /* elements en colonne */
+    position: relative;
+    font-size: 12px;
+    background: #333333ca;
+    border-top: #343434ea solid 1px;
+    /* Bordure superieure de 1 pixel solide avec couleur #343434ea */
+    padding: 7px 40px 7px 12px;
+    /* Remplissage de 7 pixels en haut, 40 pixels a droite, 7 pixels en bas, 12 pixels a gauche */
+    border-radius: 4px;
+    /* Bordure arrondie */
+    cursor: pointer;
+    width: 100%;
+    color: white;
+}
+
+/* Styles pour l'element <input> avec le focus ou une valeur valide a l'interieur de l'element avec la classe "form-control" */
+.form-control input:focus,
+.form-control input:valid {
+    outline: 0;
+    border-bottom-color: orange;
+    /* Couleur de la bordure inferieure*/
+}
+
+/* Styles pour l'element <label> a l'interieur de l'element avec la classe "form-control" */
+.form-control label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    pointer-events: none;
+    /* Aucun evenement de pointeur ne peut etre declenche sur l'element */
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav{
+    width:100%;
+    margin: 0 auto;
+    background-color:white;
+    position: sticky;
+    top:0px;
+    z-index:3;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color:black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color:orange;
+    border-bottom: 2px solid gold;
+}
+
+img{
+    width: 100%;
+    height: 900px;
+}
+
+.imgtxt{
+    position:absolute;
+    top:160px;
+    width:650px;
+    height:400px;
+    z-index:2;
+    font-size:250%;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    text-align:center;
+    margin-left: 30px;
+}
+.imgtxt2{
+    position:absolute;
+    top:260px;
+    width:650px;
+    height:400px;
+    z-index:2;
+    font-size:250%;
+    color: white;
+    text-align:left;
+    margin-left: 30px;
+}
+.presentation1{
+    position:absolute;
+    top:980px;
+    width:100%;
+    height:100px;
+    z-index:2;
+    font-size:250%;
+    color: black;
+    text-align:center;
+    margin-left: 30px;
+}
+.pres2{
+    position:absolute;
+    top:1080px;
+    width:100%;
+    height:400px;
+    z-index:2;
+    font-size:120%;
+    color: grey;
+    text-align:center;
+    margin-left: 30px;
+}
+
+.PresSport{
+    border-radius: 5px;
+    background-color: #33475b;
+    z-index:2;
+    width:19%;
+    display:inline-block;
+    
+}
+
+.placement{
+    z-index:2;
+    text-align:center;
+    padding-top:380px;
+}
+
+.imginfo{
+    width:300px;
+    height:300px;
+    border : 5px solid #0708087d;
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.imginfo:hover {
+    transform:scale(1.2);
+}
+
+.bgimg{
+    z-index:2;
+    width:90%;
+    margin:auto;
+}
+
+.titr{
+    text-align:center;
+    font-size:120%;
+}
+
+.txt{
+    color:rgb(192, 192, 192);
+    text-align:center;
+}
+
+b{
+    font-size:125%;
+}
+table{
+    width:100%;
+}
+table,
+td {
+  border: 1px solid orange;
+  text-align:center;
+  color: white;
+  border-radius: 10px;
+}
+
+thead,
+tfoot {
+  background-color: #333;
+  color: #fff;
+}
+
+.seance{
+    background-color:#333;
+}
+
