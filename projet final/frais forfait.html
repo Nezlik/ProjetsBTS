@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Frais au forfait</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="style/image/GSB.jpg" type="image/logo">
+
+</head>
+
+<body>
+    <h1 class="h1Frais">Frais au forfait</h1>
+    <div class="euros">
+        <img src="style/image/euros.png" alt="">
+    <form action="traitement.php" method="post">
+        <br>
+        <br>
+    </div>
+        <!-- Partie "Période" -->
+        <div class="periode">
+            <h2 class="h2Frais">Période</h2>
+            <div class="section">
+                <label for="periode-engagement">Mois/Année:</label>
+                <input type="date" id="periode-engagement" name="periode_engagement">
+            </div>
+        </div>
+
+
+        <br>
+        <br>
+        <br>
+
+        <!-- Partie "Frais au forfait" -->
+        <div class="fraisforfait">
+            <div class="section1">
+                <h2 class="h2Frais">Frais au forfait</h2>
+                <table class="tblForfait">
+                    <thead>
+                        <tr>
+                            <th>Repas midi</th>
+                            <th>Nuitée</th>
+                            <th>Etape</th>
+                            <th>Km</th>
+                            <th>Situation</th>
+                            <th>Date opération</th>
+                            <th>Remboursement</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" name="col1" /></td>
+                            <td><input type="text" name="col2" /></td>
+                            <td><input type="text" name="col3" /></td>
+                            <td><input type="text" name="col4" /></td>
+                            <td><input type="text" name="col5" /></td>
+                            <td><input type="date" name="col6" /></td>
+                            <td><input type="text" name="col7" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button onclick="maFonction()" class="btnForfait">+</button>
+            </div>
+        </div>
+
+
+        <br>
+        <br>
+        <!-- Partie "Hors forfait" -->
+        <div class="section2">
+            <h2 class="h2Frais">Hors forfait</h2>
+            <table class="tblForfait">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Libellé</th>
+                        <th>Montant</th>
+                        <th>Situation</th>
+                        <th>Date opération</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" name="col1_hors" /></td>
+                        <td><input type="text" name="col2_hors" /></td>
+                        <td><input type="text" name="col3_hors" /></td>
+                        <td><input type="text" name="col4_hors" /></td>
+                        <td><input type="text" name="col5_hors" /></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+        </div>
+        <br>
+        <div class="NbJustificatif">
+            <label for="nombre-justificatif">Nombre de justificatifs :</label>
+            <input type="text" id="nombre-justificatif" name="nombre_justificatif">
+        </div>
+        <br>
+
+</html>

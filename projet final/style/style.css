@@ -1,0 +1,567 @@
+/* Reinitialisation de la marge pour tous les elements */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* ----------------Acceuil---------------- */
+
+/* Styles pour l'element avec la classe "header" */
+.header {
+    margin-top: auto;
+}
+
+/* Styles pour l'element avec la classe "nav" */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    margin-top: 70px;
+}
+
+/* Styles pour le corps de la page */
+body {
+    background-color: #6590c5;
+}
+
+/* Styles pour l'element avec la classe "logo" */
+.logo {
+    margin-top: -70px;
+    margin-left: 40px;
+    width: 110px;
+}
+
+/* Styles pour l'element avec la classe "btn" */
+.btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;
+    height: 1px;
+}
+
+/* Styles pour l'element avec l'id "btn" */
+#btn {
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: transparent;
+    border: transparent;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Styles lorsque le pointeur est survole sur l'element avec l'id "btn" */
+#btn:hover {
+    color: white;
+}
+
+/* Styles pour l'element avec la classe "img" */
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-image: url("./image/reunion.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+/* Styles pour l'element avec la classe "text" */
+.text {
+    color: rgb(121, 121, 121);
+    font-family: 'Arvo', serif;
+    font-family: 'Jost', sans-serif;
+    font-size: 2rem;
+    background-color: rgba(110, 98, 98, 0.151);
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+}
+
+/* Styles pour l'element avec la classe "header2" */
+.header2 {
+    position: relative;
+}
+
+/* Styles pour l'element avec la classe "about" */
+.about {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arvo', serif;
+    font-family: 'Jost', sans-serif;
+    background-color: white;
+    width: 530px;
+    margin-left: 10%;
+}
+
+/* Styles pour l'element avec la classe "imgApropos" */
+.imgApropos {
+    position: absolute;
+    top: 9%;
+    left: calc(500px + 10%);
+}
+
+/* Media query pour les ecrans ayant une largeur maximale de 1040 pixels */
+@media (max-width: 1040px) {
+
+    /* Cacher l'element avec la classe "imgApropos" */
+    .imgApropos {
+        display: none;
+    }
+
+    /* Styles pour l'element ul a l'interieur d'un element avec la classe "flexbox" */
+    .flexbox ul {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+}
+
+/* Styles pour l'element avec la classe "service" */
+.service {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    left: 45%;
+    font-size: 2rem;
+}
+
+/* Styles pour l'element ul */
+ul {
+    list-style-type: none;
+    /* Supprimer les puces des elements de liste */
+    float: center;
+    /* Centrer l'element */
+    padding: 10%;
+    /* Ajouter un remplissage de 10% a l'interieur de l'element */
+}
+
+/* Styles pour l'element avec la classe "scroll_to_top" */
+.scroll_to_top {
+    position: fixed;
+    /* Position fixe par rapport a la fenetre */
+    width: 35px;
+    height: 35px;
+    bottom: 50px;
+    right: 30px;
+}
+
+/* Styles pour les images a l'interieur de l'element avec la classe "scroll_to_top" */
+.scroll_to_top img {
+    width: 25px;
+}
+
+/* Styles pour l'element avec la classe "footer" */
+.footer {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles pour l'element avec la classe "flexbox" */
+.flexbox {
+    margin-left: 0;
+    flex-direction: row-reverse;
+    /* Inverser l'ordre des elements dans la disposition flex */
+    justify-content: space-around;
+    /* Repartir l'espace disponible de maniere egale entre les elements */
+    background-color: white;
+    border: none;
+}
+
+/* Styles pour l'element avec l'id "contact" */
+#contact {
+    margin-top: -18px;
+}
+
+/* Styles pour l'element ul a l'interieur d'un element avec la classe "flexbox" */
+.flexbox ul {
+    background-color: transparent;
+    padding: 45px;
+    display: flex;
+}
+
+/* Styles pour les elements li a l'interieur de l'element avec la classe "flexbox" */
+.flexbox li {
+    font-family: 'Arvo', serif;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    height: 30px;
+    width: 2100%;
+    margin: 10px;
+    border: none;
+    background-color: transparent;
+}
+
+/* Styles pour l'element avec l'id "envoye" */
+#envoye {
+    cursor: pointer;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    border: black;
+    height: 30px;
+    width: 70px;
+}
+
+/* Styles pour l'element avec l'id "email" */
+#emailAcceuil {
+    border-color: black;
+    background-color: white;
+    height: 25px;
+    width: 200px;
+}
+
+/* ----------------contacts---------------- */
+.bodyContact {
+    font-family: Arial, sans-serif;
+    background-color: #6590c5d2;
+}
+
+.containerContact {
+    max-width: 400px;
+    /* Définit la largeur maximale du conteneur */
+    margin: 50px auto;
+    /* Centre le conteneur horizontalement avec une marge de 50px depuis le haut */
+    background-color: #6590c5;
+    padding: 40px;
+    /* Ajoute un espacement interne de 20px autour du contenu du conteneur */
+    border-radius: 60px;
+    /* Applique une bordure arrondie avec un rayon de 5px */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Ajoute une ombre légère au conteneur */
+}
+
+h2 {
+    text-align: center;
+    /* Centre le texte horizontalement */
+    margin-bottom: 20px;
+    /* Ajoute une marge inférieure de 20px */
+}
+
+.form-group {
+    margin-bottom: 20px;
+    /* Ajoute une marge inférieure de 20px à chaque groupe de formulaire */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+.form-group button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: green;
+    /* Change la couleur de fond du bouton lorsque le curseur le survole */
+}
+
+
+
+
+/*----------------frais forfait----------------*/
+
+.h1Frais {
+    text-align: center;
+}
+
+
+.euros {
+    cursor: pointer;
+}
+
+
+
+.periode {
+    margin-top: -10%;
+    background-color: rgba(255, 255, 255, 0.629);
+    margin-left: 40%;
+    padding: 20px;
+    width: 20%;
+    border-radius: 5px;
+}
+
+.section1 {
+    background-color: rgba(255, 255, 255, 0.629);
+    margin-left: 20px;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+.btnForfait {
+    background-color: #1f5da8;
+    border-style: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnForfait:hover {
+    background-color: #1d72da;
+}
+
+
+
+.section2 {
+    background-color: rgba(255, 255, 255, 0.629);
+    margin-left: 20px;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+.tblForfait {
+    background-color: #6590c5;
+}
+
+
+.NbJustificatif {
+    background-color: rgba(255, 255, 255, 0.629);
+    margin-left: 20px;
+    padding: 20px;
+    width: 500px;
+    border-radius: 5px;
+    margin-left: 40%;
+}
+
+#nombre-justificatif {
+    width: 48%;
+    
+}
+
+/*---------------------------------------------*/
+
+
+
+
+
+
+
+/*----------------frais au forfait----------------*/
+
+
+/* Styles pour l'element avec la classe "table" */
+.table {
+    max-width: 800px;
+    /* Larg max 800 pixels */
+    margin: 0 auto;
+    /* Centrer horizontalement l'element */
+}
+
+/* Styles pour l'element "table" */
+table {
+    border-collapse: collapse;
+    /* Fusionner les bordures des cellules adjacentes */
+    width: 100%;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Styles pour les elements "th" et "td" a l'interieur de l'element "table" */
+th,
+td {
+    padding: 10px;
+    /* Remplissage interieur de 10 pixels */
+    text-align: left;
+    border-bottom: 1px solid white;
+    /* Bordure inferieure de 1 pixel solide de couleur blanche */
+}
+
+/* Styles pour l'element "th" */
+th {
+    background-color: white;
+    /* Couleur de fond blanche */
+    color: black;
+    font-weight: bold;
+}
+
+/* Styles pour les lignes paires du corps de la table */
+tbody tr:nth-child(even) {
+    background-color: rgb(190, 190, 190);
+    /* Couleur de fond pour les lignes paires */
+}
+
+/* Styles pour les elements "input" de type "text" */
+input[type=text] {
+    width: 100%;
+    padding: 8px;
+    /* Remplissage interieur de 8 pixels */
+    border-radius: 4px;
+    /* Bordure arrondie de 4 pixels */
+    border: 1px solid #ccc;
+    /* Bordure de 1 pixel solide de couleur #ccc */
+    box-sizing: border-box;
+    /* Inclure la bordure et le remplissage dans la largeur totale de l'element */
+}
+
+/*---------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+/*----------------Connexion----------------*/
+
+
+/* Styles pour l'element avec la classe "bodyInsc" */
+.bodyConnexion {
+    font-family: "Muli", sans-serif;
+    background-color: #6590c5;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    /* Disposition des elements en colonne */
+    align-items: center;
+    /* Centrage horizontal des elements */
+    justify-content: center;
+    /* Centrage vertical des elements */
+    height: 100vh;
+    /* Hauteur de 100% de la hauteur de la fenetre */
+    overflow: hidden;
+    /* Masquage du debordement du contenu */
+}
+
+/* Styles pour l'element avec la classe "logoInsc" */
+.logoInsc {
+    display: flex;
+    cursor: pointer;
+}
+
+/* Styles pour l'element avec la classe "container" */
+.container {
+    background-color: #393e467d;
+    padding: 20px 40px;
+    /* Remplissage de 20 pixels en haut et en bas, 40 pixels a gauche et a droite */
+    border-radius: 5px;
+    /* Bordure arrondie de 5 pixels */
+}
+
+/* Styles pour l'element "h1" a l'interieur de l'element avec la classe "container" */
+.container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Styles pour les elements "a" a l'interieur de l'element avec la classe "container" */
+.container a {
+    text-decoration: none;
+    /* Pas de soulignement du texte */
+    color: lightblue;
+}
+
+/* Styles pour l'element avec la classe "bouton" */
+.bouton {
+    cursor: pointer;
+    display: inline-block;
+    /* Affichage en tant que bloc en ligne */
+    width: 100%;
+    background: lightblue;
+    /* Couleur de fond */
+    padding: 15px;
+    /* Remplissage de 15 pixels */
+    font-family: inherit;
+    font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+    /* Bordure arrondie*/
+}
+
+/* Styles pour l'element avec la classe "text" */
+.text {
+    margin-top: 30px;
+}
+
+/* Styles pour l'element avec la classe "form-control" */
+.form-control {
+    position: relative;
+    margin: 20px 0 40px;
+    /* Marge de 20 pixels en haut, 0 a gauche et a droite, 40 pixels en bas */
+    width: 300px;
+    color: white;
+}
+
+/* Styles pour l'element <input> a l'interieur de l'element avec la classe "form-control" */
+.form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    /* Bordure inferieure de 2 pixels avec couleur*/
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    /* Remplissage de 15 pixels en haut et en bas, 0 gauche et droite */
+    font-size: 18px;
+    /* Taille de police */
+    color: #fff;
+}
+
+/* Styles pour le texte de substitution de l'element <input> */
+input::placeholder {
+    color: white;
+    opacity: 1;
+    /* Opacite de 1 (pleinement visible) */
+}
+
+/* Styles pour l'element <select> */
+select {
+    display: flex;
+    flex-direction: column;
+    /* elements en colonne */
+    position: relative;
+    font-size: 12px;
+    background: #333333ca;
+    border-top: #343434ea solid 1px;
+    /* Bordure superieure de 1 pixel solide avec couleur #343434ea */
+    padding: 7px 40px 7px 12px;
+    /* Remplissage de 7 pixels en haut, 40 pixels a droite, 7 pixels en bas, 12 pixels a gauche */
+    border-radius: 4px;
+    /* Bordure arrondie */
+    cursor: pointer;
+    width: 100%;
+    color: white;
+}
+
+/* Styles pour l'element <input> avec le focus ou une valeur valide a l'interieur de l'element avec la classe "form-control" */
+.form-control input:focus,
+.form-control input:valid {
+    outline: 0;
+    border-bottom-color: lightblue;
+    /* Couleur de la bordure inferieure*/
+}
+
+/* Styles pour l'element <label> a l'interieur de l'element avec la classe "form-control" */
+.form-control label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    pointer-events: none;
+    /* Aucun evenement de pointeur ne peut etre declenche sur l'element */
+}

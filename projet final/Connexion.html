@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="style/image/GSB.jpg" type="image/logo">
+    <title>Inscription</title>
+</head>
+
+<body class="bodyConnexion">
+    <a href="http://127.0.0.1:80">
+        <img class="logoInsc" src="style/image/GSB.jpg">
+    </a>
+    <div class="container">
+        <h1>Connexion</h1>
+        <form>
+            <div class="form-control">
+                <input type="email" value="" required placeholder="Identifiant">
+            </div>
+            <div class="form-control">
+                <input type="password" value="" required placeholder="Mot de passe">
+            </div>
+            <div class="MenuDeroulant">
+                <select name="deroulant" id="metier">
+                    <option value="*">-Sélectionner options-</option>
+                    <option value="1">Visiteur</option>
+                    <option value="2">Comptable</option>
+                </select>
+            </div>
+            <br>
+            <br>
+            <button class="bouton">Valider</button>
+            <script type="text/javascript" src="./ConnexionInclude.php"></script>
+        </form>
+    </div>
+</body>
+
+</html>

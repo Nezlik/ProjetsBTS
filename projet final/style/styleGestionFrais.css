@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #6590c5;
+}
+
+h1 {
+    font-family: "Arial", sans-serif;
+    font-size: 30px;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 13px rgba(0.3, 0.3, 0.3, 0.3);
+}
+
+.forfait {
+    margin-top: -10%;
+    margin-left: 65%;
+    background-color: rgba(252, 252, 252, 0.721);
+    max-width: 350px;
+    padding: 15px;
+    border-radius: 5%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    margin-top: -12%;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+.Engagement {
+    background-color: rgba(252, 252, 252, 0.721);
+    max-width: 300px;
+    margin: 50px;
+    padding: 15px;
+    border-radius: 5%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.HorsForfait {
+    background-color: rgba(252, 252, 252, 0.721);
+    max-width: 300px;
+    margin: 50px;
+    padding: 15px;
+    border-radius: 5%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    margin-top: -12%;
+}
+
+
+label {
+    display: inline-block;
+    width: 120px;
+}
+
+.logo {
+    display: flex;
+    margin-top: -20%;
+    margin-left: 70%;
+    cursor: pointer;
+}
+
+img {
+    display: flex;
+    margin-left: 35%;
+}
+
+input[type="number"],
+input[type="date"],
+input[type="text"] {
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border-width: 1px;
+}
+
+.btnGestion button {
+    margin-left: 300px;
+    width: 10%;
+    padding: 10px;
+    background-color: #0a6cb3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnGestion button:hover {
+    background-color: rgb(2, 135, 196);
+}

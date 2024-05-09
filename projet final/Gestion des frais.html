@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="style/image/GSB.jpg" type="image/logo">
+    <link rel="stylesheet" href="/style/styleGestionFrais.css">
+    <title>Gestion de frais</title>
+
+</head>
+
+<body>
+    <h1>Gestion des frais</h1>
+
+    <div class="Engagement">
+        <h2>Période d'engagement</h2>
+        <label for="periode_debut">Début :</label>
+        <input type="date" id="periode_debut" name="periode_debut">
+        <label for="periode_fin">Fin :</label>
+        <input type="date" id="periode_fin" name="periode_fin">
+    </div>
+
+    <div class="logo">
+        <a href="http://127.0.0.1:80">
+            <img src="/style/image/GSB.jpg" alt="" height="120">
+        </a>
+    </div>
+
+
+    <img src="/style/image/gestionFrais.png" alt="" height="200">
+
+    <div class="forfait">
+        <h2>Frais au forfait</h2>
+        <label for="nombre_repas">Nombre de repas :</label>
+        <input type="number" id="nombre_repas" name="nombre_repas">
+        <label for="nombre_nuitees">Nombre de nuitées :</label>
+        <input type="number" id="nombre_nuitees" name="nombre_nuitees">
+        <label for="nombre_etapes">Nombre d'étapes :</label>
+        <input type="number" id="nombre_etapes" name="nombre_etapes">
+    </div>
+
+
+    <div class="HorsForfait">
+        <h2>Hors Forfait</h2>
+        <div id="hors_forfait">
+            <div class="hors_forfait_item">
+                <label for="date_1">Date :</label>
+                <input type="date" id="date_1" name="date_1">
+                <label for="libelle_1">Libellé :</label>
+                <input type="text" id="libelle_1" name="libelle_1">
+                <label for="montant_1">Montant :</label>
+                <input type="text" id="montant_1" name="montant_1">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="btnGestion">
+        <button type="submit">Valider</button>
+        <button type="reset">Effacer</button>
+    </div>
+</body>
+
+</html>
