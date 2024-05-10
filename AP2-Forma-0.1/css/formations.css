@@ -1,0 +1,25 @@
+.tables {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+table {
+  width: 40vw;
+  background-color: white;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 10px; /* Ajout d'une marge entre les tableaux */
+}
+
+td, th {
+  border: solid black;
+  padding: 10px;
+  vertical-align: top; /* Aligner le contenu en haut de la cellule */
+}
+
+.redirect-button {
+padding-left: 80%;
+}
+

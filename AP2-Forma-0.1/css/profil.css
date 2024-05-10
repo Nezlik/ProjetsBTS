@@ -1,0 +1,30 @@
+.profile-header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+
+.profile-header h1 {
+    color: #333;
+}
+
+.profile-info {
+    margin-top: 20px;
+}
+
+.profile-info p {
+    margin: 10px 0;
+}
+
+.profile-courses {
+    margin-top: 20px;
+}
+
+.course-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.course-item {
+    margin-bottom: 10px;
+}

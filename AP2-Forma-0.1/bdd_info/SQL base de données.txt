@@ -1,0 +1,80 @@
+CREATE TABLE domaine_formation(
+   id_domaine INT,
+   libelle_domaine VARCHAR(100),
+   PRIMARY KEY(id_domaine)
+)ENGINE = INNODB;
+
+CREATE TABLE statut(
+   id_statut INT,
+   libelle_statut VARCHAR(50) NOT NULL,
+   PRIMARY KEY(id_statut)
+)ENGINE = INNODB;
+
+CREATE TABLE interlocuteur(
+   id_interlocuteur INT,
+   nom VARCHAR(50),
+   prenom VARCHAR(50),
+   tel INT,
+   email VARCHAR(50),
+   fax VARCHAR(50),
+   PRIMARY KEY(id_interlocuteur)
+)ENGINE = INNODB;
+
+CREATE TABLE formation(
+   id_form INT,
+   libelle_form VARCHAR(100),
+   intervenant INT,
+   prix DOUBLE,
+   nb_max INT,
+   contenue_form VARCHAR(1000),
+   id_domaine INT NOT NULL,
+   PRIMARY KEY(id_form),
+   FOREIGN KEY(id_domaine) REFERENCES domaine_formation(id_domaine)
+)ENGINE = INNODB;
+
+CREATE TABLE association(
+   id_association INT,
+   nom VARCHAR(50),
+   numero_icom INT,
+   id_interlocuteur INT NOT NULL,
+   PRIMARY KEY(id_association),
+   UNIQUE(id_interlocuteur),
+   FOREIGN KEY(id_interlocuteur) REFERENCES interlocuteur(id_interlocuteur)
+)ENGINE = INNODB;
+
+CREATE TABLE Session_formation(
+   id_session INT,
+   date_session DATE,
+   heure_debut TIME,
+   heure_fin VARCHAR(50),
+   lieu VARCHAR(50),
+   id_form INT NOT NULL,
+   PRIMARY KEY(id_session),
+   FOREIGN KEY(id_form) REFERENCES formation(id_form)
+)ENGINE = INNODB;
+
+CREATE TABLE utilisateur(
+   id_utilisateur INT,
+   nom VARCHAR(50),
+   prenom VARCHAR(50),
+   adresse VARCHAR(50),
+   CP INT,
+   fonction VARCHAR(50),
+   email VARCHAR(50),
+   ville VARCHAR(50),
+   id_association INT NOT NULL,
+   id_statut INT NOT NULL,
+   PRIMARY KEY(id_utilisateur),
+   FOREIGN KEY(id_association) REFERENCES association(id_association),
+   FOREIGN KEY(id_statut) REFERENCES statut(id_statut)
+)ENGINE = INNODB;
+
+CREATE TABLE inscription(
+   id_utilisateur INT,
+   id_session INT,
+   date_inscription VARCHAR(50),
+   etat VARCHAR(50),
+   PRIMARY KEY(id_utilisateur, id_session),
+   FOREIGN KEY(id_utilisateur) REFERENCES utilisateur(id_utilisateur),
+   FOREIGN KEY(id_session) REFERENCES Session_formation(id_session)
+)ENGINE = INNODB;
