@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Killian">
+	<meta name="description" content="Formulaire de contact">
+	<title>Contact - Meet'in night</title>
+	<link rel="stylesheet" href="stole.css">
+	<style>
+        body {
+            text-decoration: underline;
+            background-image: url(images/natural-grainy-gradient-overlay-deep-260nw-1279795618.png);
+            background-size: 100%;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+	</style>
+</head>
+
+
+<body>
+	<form action="/Ma page de traitement" method="post">
+		<h1 ><u class="policai">Contact:</u></h1>
+		<div class="nom">
+			<label for="name">Prénom :</label>
+			<input type="text" id="name" name="user_name">
+		</div>
+		<div class="nom">
+			<label for="surname">Nom :</label>
+			<input type="text" id="name" name="user_surname">
+		</div>
+		<div class="maissage">
+			<label for="mail">e-mail&nbsp;:</label>
+			<input type="email" id="mail" name="user_mail">
+		</div>
+		<div class="maissage">
+			<label for="msg">Message :</label>
+			<textarea id="msg" name="user_message"></textarea>
+		</div>
+		<div class="checkbox">
+			<input type="checkbox" id="cgu" name="user_cgu">
+			<label for="cgu">J'accepte les conditions générales d'utilisation</label>
+			
+		</div>
+		<div class="checkbox">
+			<input type="checkbox" id="infoget" name="user_infoget">
+			<label for="infoget">J'accepte que mes données soient recueillies à des fins commerciales</label>
+			
+		</div>
+		<div class="checkbox">
+			<input type="checkbox" id="news" name="user_news">
+			<label for="news">J'accepte de recevoir des mails lors de nouveaux événements</label>
+			
+		</div>
+		<div class="button">
+			<button type="submit">Envoyer le message</button>
+		</div>
+	</form>
+</body>
